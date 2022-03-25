@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productos</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+</head>
+<body bgcolor="#229954">
+
+	<header class="header" style="background-color: #7DCEA0 ;"> 
+		<div class="container">
+			<div class="row">
+		    <table class="u-full-width"
+		           width="100%"
+		           height=¨100%>
+					<tr>
+						<th align="left"> <h1>Venta de articulos del hogar</h1> </th>
+						<th align="left">
+								<div class="two columns u-pull-right">
+									<ul>
+										<li class="submenu">
+											<img src="img/cart.png">
+												<div id="carrito">
+												<p class="vacio">carrito vacio</p>
+												<table id="lista-carrito" class="u-full-width">
+													<thead>
+														<tr>
+															<th>Imagen</th>
+															<th>Productos</th>
+															<th>Precio</th>
+														</tr>
+													</thead>
+													<tbody>
+										
+													</tbody>
+												</table>
+												<button href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</button>
+												</div>	
+										</li>
+									</ul>
+								</div>
+						</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</header>
+
+		
+	<h2 style=" width: 1250px; height: 550px; background-image: url(img/fondo2.jpeg); background-size: cover;">
+                <div class="hero">
+	          			<div class="container">
+		           		 <div class="row">
+			              <div class="six colmuns">
+				                <div class="contenido-hero">
+				                  	<p><font color="#FDFEFE">Realiza tu pedido</font></p>
+				                   	<p><font color="#FDFEFE">Todos los pedidos con descuento a domicilio</font></p>
+				                  	   <header>
+    															<input class="u-full-width" type="search"  id="input-search" placeholder="¿Que te gustaria comprar?" id="buscador"> 
+						                    	<p>
+							                  	<input type="submit" class="sumbit-Buscador">
+							                  	</p>
+    															<div class="content-search">
+        															<div class="content-table">
+          															  <table id="table">
+                															<thead>
+              															      <tr>
+             															           <td></td>
+               															     </tr>
+               															 </thead>
+                
+            															    <tbody>
+          															          <tr>
+         															               <td><a href="#">Juego de sala</a></td>
+         															           </tr>
+                    
+        															            <tr>
+        															                <td><a href="#">Comedor</a></td>
+       															             </tr>
+                    
+      															              <tr>
+      															                  <td><a href="#">Baño</a></td>
+      															              </tr>
+                    
+                  															  <tr>
+                   															     <td><a href="#">Dormitorio</a></td>
+                															    </tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Jardineria</a></td>
+                    															</tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Electronicos</a></td>
+                   															 </tr>
+                    
+             															       <tr>
+             															           <td><a href="#">PS</a></td>
+             															       </tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Estante</a></td>
+                    															</tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Nevera</a></td>
+                    															</tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Lavadora</a></td>
+                    															</tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Horno</a></td>
+                    															</tr>
+                    
+                    															<tr>
+                        															<td><a href="#">Impresora</a></td>
+                    															</tr>
+                    
+                															</tbody>
+            															</table>
+        															</div>
+    														</div>
+						                </header>
+
+						            </div>
+				          	</div>
+				        	 </div>
+			      			</div>
+		    				</div>       		
+            </div>
+        </div>
+  </h2>
+
+        
+  <h3 style="background-color: #F4F6F7;">
+        <div class="barra">
+	          <div class="container">
+		            <div class="row">
+		            	    <table class="u-full-width"
+		            	    				width="100%"
+		            	    				height=¨100%¨ 
+		            	    >            	
+        				              <tr>
+        				  		            <th align="right"> <img src="img/icono1.png" width="30"> 
+        				  		            </th>
+        				  		            <th align="left"> <p> 15 productos diferentes  <br>Explora los productos mas nuevos  </p>
+        				  		            </th>
+        				  		            <th align="right"> <img src="img/icono2.png" width="30"> 
+        				  		            </th>
+        				  		            <th align="left"> <p> Expertos  <br>Prueba las nuevas combinaciones  </p>
+        				  		            </th>
+        				  		            <th align="right"> <img src="img/icono3.png" width="30"> 
+        				  		            </th>
+        				  		            <th align="left"> <p>Envio  <br>Gratis a tu casa  </p>
+        				  		            </th>
+        				  	          </tr>
+        			        </table>
+								</div>
+						</div>
+				</div>
+	</h3>
+
+	<div id="lista-catalogo" class="container">
+		<h1 align="center">Pedidios en linea</h1>
+		<div class="row">
+			<table border
+						class="u-full-width"
+			       width="90%"
+			       height=¨100%¨
+			       align="center" 
+			       style="background-color: #E5E8E8 ;" 
+			       id="lista-catalogo"
+
+			>            	
+   	    <tr>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product1.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Juego de sale</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>200$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product2.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Comedor</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>150$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product3.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Baño</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>130$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+        </tr>
+        <tr>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product4.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Dormitorio</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>170$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product5.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Jardineria</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>180$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product6.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Electronicos</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>300$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+        </tr>
+        <tr>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product7.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>PS</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png" width="10" height="10">
+																	<div class="precio" align="left"><span style="float:right">115$</span>250$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product8.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Estante</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>120$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product9.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Nevera</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>280$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+        </tr>
+        <tr>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product10.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Lavadora</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>550$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product11.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Horno</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>320$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+     		   	<th> 		<div class="row">
+											<div class="four columns">
+													<div class="card">
+															<img src="img/product12.jpg" class="u-full-width">
+															<div class="info-card">
+																	<h3>Impresora</h3>
+																	<p>Envio Gratis</p>
+																	<img src="img/estrellas.png">
+																	<div class="precio" align="left"><span style="float:right">115$</span>150$</div>
+																	<button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12" style="background-color: #85C1E9; width:300px; height: 100px;"> Agregar a carrito</button>	
+															</div>
+													</div>
+											</div>
+        		</th>
+        </tr>
+    	</table>
+		</div>
+	</div>
+
+
+	<h5 style="background-color: #7DCEA0 ;">
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<table class="u-full-width"
+			  	     width="40%"
+					> 
+						<tr>
+							<th> 
+								<nav class="menu">
+									<br> <a class="enlace" href="https://www.facebook.com/naomy.camila.773">Camila Quispe</a>
+									<br> <a class="enlace" href="https://www.facebook.com/sandra.anahuarqui/">Sandra Anahuarqui</a>
+									<br> <a class="enlace" href="https://www.facebook.com/anderson.lasinquiche.10">Anderson lasinquiche</a>
+									<br> <a class="enlace" href="https://www.facebook.com/sarita.duque.73157">Sara duque</a>
+									<br> <a class="enlace" href="https://www.facebook.com/david.vasantes.9">Deyvid Basantes</a>
+								</nav>
+							</th>
+							<th>
+								<nav class="menu">
+									<br> <a class="enlace" href="https://muebles-lara.es/blog/los-materiales-mas-utilizados-la-fabricacion-los-muebles/">Materiales de calidad</a>
+									<br> <a class="enlace" href="https://m.facebook.com/Institucion-Educativa-Fiscal-Cinco-de-Junio-213764465942484">Blog Estudiantil</a>
+									<br> <a class="enlace" href="https://www.google.com/maps/place/COLEGIO+TECNICO+CINCO+DE+JUNIO/@-0.2584165,-78.5285355,17z/data=!3m1!4b1!4m5!3m4!1s0x91d598fdd874eb6b:0x500cb5f5f9d1a0de!8m2!3d-0.2584165!4d-78.5263468">Ubicación</a>
+								</nav>
+							</th>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+		</footer>
+	</h5>
+
+<script src="js/search.js"></script>
+<script type="text/javascript" src="js/app.js"> </script>
+</body>
+</html>
